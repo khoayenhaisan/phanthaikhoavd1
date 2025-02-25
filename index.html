@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Hải Sản</title>
+    <title>Hải Sản Tươi Sống</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Chào mừng đến với cửa hàng hải sản!</h1>
+    <header>
+        <h1>Hải Sản Tươi Sống</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Chào mừng đến với cửa hàng hải sản của chúng tôi!</h2>
+        <p>Chúng tôi cung cấp hải sản tươi sống, giao hàng tận nơi.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Sản phẩm của chúng tôi</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="crab.jpg" alt="Cua biển">
+                <h3>Cua Biển</h3>
+                <p>Giá: 500.000đ/kg</p>
+                <button onclick="addToCart('Cua biển', 500000)">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="shrimp.jpg" alt="Tôm sú">
+                <h3>Tôm Sú</h3>
+                <p>Giá: 300.000đ/kg</p>
+                <button onclick="addToCart('Tôm sú', 300000)">Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Giỏ hàng</h2>
+        <ul id="cart-items"></ul>
+        <p>Tổng tiền: <span id="total-price">0</span>đ</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Liên hệ</h2>
+        <p>Gọi ngay: 0987 654 321</p>
+    </section>
 </body>
 </html>
+
