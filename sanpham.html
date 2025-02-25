@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chợ Hải Sản Tươi Sống</title>
+    <title>Sản Phẩm</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Chợ Hải Sản Tươi Sống</h1>
+        <h1>Chợ Hải Sản</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Trang Chủ</a></li>
@@ -19,17 +19,24 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <img src="images/banner.jpg" alt="Hải sản tươi ngon">
-        <h2>Hải Sản Tươi Sống - Giao Hàng Tận Nơi</h2>
-    </section>
-
-    <section class="intro">
-        <p>Chuyên cung cấp hải sản tươi sống như tôm, cua, cá hồi, mực tươi, đảm bảo chất lượng!</p>
+    <section class="products">
+        <div class="product">
+            <img src="images/tom.jpg" alt="Tôm hùm">
+            <h3>Tôm Hùm</h3>
+            <p>Giá: 500,000 VNĐ/kg</p>
+            <button onclick="addToCart('Tôm Hùm', 500000)">Thêm vào giỏ</button>
+        </div>
+        <div class="product">
+            <img src="images/ca-hoi.jpg" alt="Cá Hồi">
+            <h3>Cá Hồi</h3>
+            <p>Giá: 300,000 VNĐ/kg</p>
+            <button onclick="addToCart('Cá Hồi', 300000)">Thêm vào giỏ</button>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Chợ Hải Sản. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
